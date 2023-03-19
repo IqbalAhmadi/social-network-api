@@ -2,10 +2,10 @@ const { User, Thought } = require('../models');
 
 // gets all thoughts
 const getThoughts = async (req, res) => {
-  console.log('test');
+  // console.log('test');
   try {
     const thoughts = await Thought.find({});
-    console.log('thoughts');
+    // console.log('thoughts');
     res.json(thoughts);
   } catch (err) {
     res.status(500).json(err);
